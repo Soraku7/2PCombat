@@ -48,14 +48,19 @@
      <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerPart.cs" />
      <Compile Include="Assets\Scripts\ScriptsObject\Foot.cs" />
+     <Compile Include="Assets\Scripts\Manager\PoolManager.cs" />
+     <Compile Include="Assets\Scripts\Base\Singleton.cs" />
      <Folder Include="Assets" />
+     <Folder Include="Assets\Resources" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Sprites\Objects" />
      <Folder Include="Assets\ScriptsObject\Heads" />
      <Folder Include="Assets\InputSystem" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Ruletiles" />
+     <Folder Include="Assets\Scripts\Base" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Sprites\Background\Layer 1" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Characters\Sprites\Ronin" />
      <Folder Include="Assets\ScriptsObject" />
+     <Folder Include="Assets\Resources\TestArt" />
      <Folder Include="Assets\Scripts\Player" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Tiles\Background\Layer 4" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Sprites\Buildings" />
@@ -67,7 +72,6 @@
      <Folder Include="Assets\ScriptsObject\Foots" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Sprites\Background\Layer 4" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Sprites\Background\Layer 2" />
-     <Folder Include="Assets\Resources" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Showcase" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Sky" />
      <Folder Include="Assets\Scripts\Manager" />
