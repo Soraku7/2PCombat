@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Hair
+    m_Hash: 1019596327
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Normal
+      m_Hash: 640249298
+      m_Sprite: {fileID: 150804538408492106, guid: df5532bc8fa5e5348bbe148ab019fa51, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 150804538408492106, guid: df5532bc8fa5e5348bbe148ab019fa51, type: 3}
+    - m_Name: Armour
+      m_Hash: 273741221
+      m_Sprite: {fileID: -2419234087922823206, guid: e2a43023dea1d8b4db0b103088c38bac, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2419234087922823206, guid: e2a43023dea1d8b4db0b103088c38bac, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  m_PrimaryLibraryGUID: 

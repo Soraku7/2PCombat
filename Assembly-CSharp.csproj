@@ -41,15 +41,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Base\Singleton.cs" />
      <Compile Include="Assets\Scripts\ScriptsObject\Head.cs" />
      <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
      <Compile Include="Assets\Scripts\ScriptsObject\Parts.cs" />
      <Compile Include="Assets\Scripts\ScriptsObject\Torso.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerPart.cs" />
-     <Compile Include="Assets\Scripts\ScriptsObject\Foot.cs" />
      <Compile Include="Assets\Scripts\Manager\PoolManager.cs" />
-     <Compile Include="Assets\Scripts\Base\Singleton.cs" />
+     <Compile Include="Assets\Scripts\ScriptsObject\Foot.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Resources" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Sprites\Objects" />
@@ -93,6 +93,7 @@
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Characters\Animations\Shuriken" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Characters\Prefabs" />
+     <Folder Include="Assets\SpriteAssets" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Tiles\Background\Layer 6" />
      <Folder Include="Assets\Scripts" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment" />
