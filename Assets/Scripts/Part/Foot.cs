@@ -10,6 +10,7 @@ namespace Part
         闪电战术
     }
     
+    [CreateAssetMenu(fileName = "Part", menuName = "Part/Foot", order = 1)]
     public class Foot : Parts
     {
         public FootSkill footSkill;
