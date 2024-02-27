@@ -20,7 +20,7 @@
                     "id": "adbc34ec-72da-48ba-9799-fc78de95871f",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "MultiTap",
                     "initialStateCheck": false
                 },
                 {

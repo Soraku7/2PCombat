@@ -42,24 +42,23 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Base\Singleton.cs" />
-     <Compile Include="Assets\Scripts\ScriptsObject\Head.cs" />
+     <Compile Include="Assets\Scripts\Part\Head.cs" />
      <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
-     <Compile Include="Assets\Scripts\ScriptsObject\Parts.cs" />
-     <Compile Include="Assets\Scripts\ScriptsObject\Torso.cs" />
+     <Compile Include="Assets\Scripts\Part\Parts.cs" />
+     <Compile Include="Assets\Scripts\Part\Torso.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerPart.cs" />
      <Compile Include="Assets\Scripts\Manager\PoolManager.cs" />
-     <Compile Include="Assets\Scripts\ScriptsObject\Foot.cs" />
+     <Compile Include="Assets\Scripts\Part\Foot.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Resources" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Sprites\Objects" />
-     <Folder Include="Assets\ScriptsObject\Heads" />
      <Folder Include="Assets\InputSystem" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Ruletiles" />
      <Folder Include="Assets\Scripts\Base" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Sprites\Background\Layer 1" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Characters\Sprites\Ronin" />
-     <Folder Include="Assets\ScriptsObject" />
+     <Folder Include="Assets\PhysicalMaterial" />
      <Folder Include="Assets\Resources\TestArt" />
      <Folder Include="Assets\Scripts\Player" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Tiles\Background\Layer 4" />
@@ -69,7 +68,6 @@
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\49Wares\Art\Pixelart" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Tiles\Background\Layer 3" />
-     <Folder Include="Assets\ScriptsObject\Foots" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Sprites\Background\Layer 4" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Sprites\Background\Layer 2" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Showcase" />
@@ -93,18 +91,16 @@
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Characters\Animations\Shuriken" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Characters\Prefabs" />
-     <Folder Include="Assets\SpriteAssets" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Tiles\Background\Layer 6" />
      <Folder Include="Assets\Scripts" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment" />
-     <Folder Include="Assets\Scripts\ScriptsObject" />
+     <Folder Include="Assets\Scripts\Part" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Characters" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Tiles\Objects" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Characters\Sprites\Ninja" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Tiles\Background\Layer 2" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Characters\Animators" />
-     <Folder Include="Assets\ScriptsObject\Torsos" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Sprites\Background" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Characters\Animations\Ninja" />
      <Reference Include="UnityEngine">

@@ -1,15 +1,13 @@
+using Player;
 using UnityEngine;
 using UnityEngine.UI;
-namespace ScriptsObject
-{
 
+namespace Part
+{
     public class Parts : ScriptableObject
     {
         public Image image;
         public float coldTime;
-        public  virtual void  Skill()
-        {
-            
-        }
+        
     }
 }
