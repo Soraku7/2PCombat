@@ -50,6 +50,8 @@
      <Compile Include="Assets\Scripts\Player\PlayerPart.cs" />
      <Compile Include="Assets\Scripts\Manager\PoolManager.cs" />
      <Compile Include="Assets\Scripts\Part\Foot.cs" />
+     <Compile Include="Assets\Scripts\Manager\GameInputManager.cs" />
+     <Compile Include="Assets\Scripts\InputSystem\Player1.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Resources" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Sprites\Objects" />
@@ -92,10 +94,12 @@
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Characters\Animations\Shuriken" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Characters\Prefabs" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Tiles\Background\Layer 6" />
+     <Folder Include="Assets\ScriptObjects" />
      <Folder Include="Assets\Scripts" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment" />
      <Folder Include="Assets\Scripts\Part" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Characters" />
+     <Folder Include="Assets\Scripts\InputSystem" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Tiles\Objects" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Characters\Sprites\Ninja" />

@@ -13765,6 +13765,7 @@ GameObject:
   - component: {fileID: 1909537716}
   - component: {fileID: 1909537717}
   - component: {fileID: 1909537718}
+  - component: {fileID: 1909537719}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player
@@ -13931,14 +13932,27 @@ MonoBehaviour:
   health: 0
   movementSpeed: 10
   jumpForce: 5000
+  jumpCount: 2
   _rbody: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   isOnGround: 0
-  head: {fileID: 0}
-  torso: {fileID: 11400000, guid: f76fc3c08db81254dbe7586406e230af, type: 2}
-  foot: {fileID: 11400000, guid: 7e63c2c504aa08b43b8d18a8263d44f9, type: 2}
+  head: {fileID: 11400000, guid: 9c6b16f035451ec4784962c8de92720a, type: 2}
+  torso: {fileID: 11400000, guid: b8695eb3170965f42b660d4d38caf2a1, type: 2}
+  foot: {fileID: 11400000, guid: 1f9c62ab7d181134cb2035dd580d929d, type: 2}
+--- !u!114 &1909537719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909537712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0430947936a064f975c7f74ad995dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2122150802
 GameObject:
   m_ObjectHideFlags: 0
