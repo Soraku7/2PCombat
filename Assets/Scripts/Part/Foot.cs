@@ -1,11 +1,12 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace Part
 {
     public enum FootSkill
     {
         DoubleJump,
-        空中喷射,
+        AirJet,
         踏云行,
         闪电战术
     }

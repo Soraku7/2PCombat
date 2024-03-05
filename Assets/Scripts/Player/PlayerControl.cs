@@ -13,6 +13,8 @@ namespace Player
         public float movementSpeed = 10;
         public float jumpForce = 5000;
         public int jumpCount = 2;
+        public bool isAirJet;
+        public float jetSpeed = 10;
 
 
         private BoxCollider2D _col;
@@ -21,6 +23,8 @@ namespace Player
         private Vector2 _movement;
         public LayerMask groundLayer;
         public bool isOnGround;
+        
+        private float _footTimer;
 
         [Header("组件")] public Head head;
         public Torso torso;
@@ -34,11 +38,15 @@ namespace Player
 
         void Start()
         {
+            _footTimer = foot.coldTime;
         }
 
         void Update()
         {
             CheckIsGround();
+            UpdateTimer();
+            OnFootSkill();
+            Move();
         }
 
         void FixedUpdate()
@@ -73,11 +81,19 @@ namespace Player
             }
         }
 
+        private void UpdateTimer()
+        {
+            _footTimer -= Time.deltaTime;
+        }
+        
         #region InputSystem
 
-        private void OnMove(InputValue value)
+        private void Move()
         {
-            _movement = value.Get<Vector2>();
+            _movement = GameInputManager.MainInstance.Move;
+            
+            int faceDir = (int)_movement.x > 0? 1 : -1;
+            transform.localScale = new Vector3(faceDir, 1, 1);
         }
 
         private void OnHead(InputValue value)
@@ -90,58 +106,60 @@ namespace Player
             Debug.Log("躯干技能");
         }
 
-        private void OnFoot(InputValue value)
+        private void OnFootSkill()
         {
-            if (isOnGround)
+            if (GameInputManager.MainInstance.Foot)
             {
-                Debug.Log("跳跃");
-                _rbody.AddForce(Vector3.up * jumpForce);
-                isOnGround = false;
-            }
-            
-            jumpCount--;
-            
-            if (!isOnGround)
-            {
-                //在空中时 技能释放
-                Debug.Log("腿部技能");
-                DoubleSkill();
+                if (isOnGround)
+                {
+                    Debug.Log("跳跃");
+                    _rbody.AddForce(Vector3.up * jumpForce);
+                    isOnGround = false;
+                }
+                else
+                {
+                    //在空中时 技能释放
+                    Debug.Log("腿部技能");
+                    UseFootSkill();
+                }
+                jumpCount--;
             }
         }
 
         #endregion
 
-        IEnumerator UseFootSkill()
+        private void  UseFootSkill()
         {
-            Debug.Log("触发技能");
-            while (true)
+            switch (foot.footSkill)
             {
-                switch (foot.footSkill)
-                {
-                    case FootSkill.DoubleJump:
-                        DoubleSkill();
-                        Debug.Log("二段跳");
-                        yield return new WaitForSeconds(foot.coldTime);
-                        break;
-                    
-                    default:
-                        yield return 0;
-                        break;
+                case FootSkill.DoubleJump:
+                    DoubleJumpSkill();
+                    Debug.Log("二段跳");
+                    break;
+                case FootSkill.AirJet:
+                    Debug.Log("空中喷射");
+                    AirJetSkill();
+                    break;
+                default:
+                    break;
                 }
-            }
         }
 
 
         #region PlayerSkill
 
-        private void DoubleSkill()
+        private void DoubleJumpSkill()
         {
             if (jumpCount > 0)
             {
-                _rbody.AddForce(Vector3.up * jumpForce);
+                _rbody.AddForce(Vector2.up * jumpForce);
             }
         }
 
+        private void AirJetSkill()
+        {
+            transform.Translate(transform.localScale.x * (Time.deltaTime * jetSpeed) , 1 , 1);
+        }
         #endregion
     }
 }

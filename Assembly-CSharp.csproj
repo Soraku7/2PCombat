@@ -46,12 +46,12 @@
      <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
      <Compile Include="Assets\Scripts\Part\Parts.cs" />
      <Compile Include="Assets\Scripts\Part\Torso.cs" />
+     <Compile Include="Assets\Scripts\InputSystem\Player1.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
+     <Compile Include="Assets\Scripts\Manager\GameInputManager.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerPart.cs" />
      <Compile Include="Assets\Scripts\Manager\PoolManager.cs" />
      <Compile Include="Assets\Scripts\Part\Foot.cs" />
-     <Compile Include="Assets\Scripts\Manager\GameInputManager.cs" />
-     <Compile Include="Assets\Scripts\InputSystem\Player1.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Resources" />
      <Folder Include="Assets\49Wares\Art\Pixelart\Samurai Sideview Tileset\Environment\Wasteland\Sprites\Objects" />
